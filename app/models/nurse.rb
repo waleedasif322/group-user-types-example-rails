@@ -1,0 +1,4 @@
+class Nurse < User
+
+
+end

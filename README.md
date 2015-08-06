@@ -17,7 +17,10 @@ Then try creating a join table between them:
 
 This creates a join table between the doctor and patient, but there are two problems:
 
-    1. The `provider_type` is set to `User`, (because of the class name set in patient_provider_relation.rb). How would I set it to be the class_name of the provider type (e.g. Doctor, Nurse etc)?
+1. The `provider_type` is set to `User`, (because of the class name set in patient_provider_relation.rb). How would I set it to be the class_name of the provider type (e.g. Doctor, Nurse etc)?
     
-    2. If I then do Patient.first.providers, I get a `NameError: uninitialized constant Patient::Provider`
+2. If I then do Patient.first.providers, I get a 
+    ```RUBY
+    NameError: uninitialized constant Patient::Provider
+    ```
 
